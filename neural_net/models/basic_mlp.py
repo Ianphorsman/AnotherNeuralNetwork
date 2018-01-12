@@ -10,7 +10,7 @@ import pdb
 
 class MLP(object):
 
-    def __init__(self, X, y, filename='sgd', inspect_rate=50, iterations=1000, learning_rate=0.000025, nodes=(2,8,4,1), batch=(False, 0), activation_function='sigmoid'):
+    def __init__(self, X, y, filename='mlp', inspect_rate=50, iterations=1000, learning_rate=0.000025, nodes=(2,8,4,1), batch=(False, 0), activation_function='sigmoid'):
         # store input and expected output data
         self.X = X
         self.y = np.atleast_2d(y)
@@ -166,7 +166,7 @@ class MLP(object):
 X, y = make_moons(1000, noise=0.4, random_state=333)
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
-mlp = mlp(X_train, y_train, iterations=1500, learning_rate=0.003)
+mlp = MLP(X_train, y_train, iterations=1500, learning_rate=0.003)
 
 mlp.train(mlp.X, mlp.y)
 
