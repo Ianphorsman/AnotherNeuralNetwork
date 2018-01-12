@@ -1,5 +1,5 @@
 *.p
-*.idea
+*.idea/
 /__pycache__
 *.pyc
 /dist/
