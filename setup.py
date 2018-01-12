@@ -8,6 +8,6 @@ setup(
     author_email='ianphorsman@gmail.com',
     license='MIT',
     version='0.1',
-    packages=['neural_net'],
+    packages=['numpy_neural_nets'],
     install_requires=['numpy', 'scikit-learn', 'seaborn']
 )
